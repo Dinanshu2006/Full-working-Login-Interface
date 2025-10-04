@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "McjzNJY_5txmKLuI2",
+            });
+        })();
+    </script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="Csign" id="sr">
+        <button id="sign" class="sign" onclick="register()">Register</button>
+        <button id="sign" class="sign" onclick="loginshow()">Login</button>
+    </div>
+    <div class="form" id="form1">
+        <h1>Login*</h1>
+        <input type="email" id="email1" class="user" placeholder="Email" required><br>
+        <input type="password" id="pass1" class="user" placeholder="Password" required><br>
+        <button id="back" class="login" onclick="window.location.href='index.html'"> Back</button>
+        <button class="login" id="login" onclick="login()">Login</button>
+    </div>
+    <div class="second" id="sec">
+         <a href="index.html" class="login">Back</a>
+         <button class="login" id="acc" onclick="acc()">Logout</button>
+        <div class="head">Images</div>
+        <div class="image">
+
+            <img src="img1.jpg" alt="image1">
+            <img src="img2.jpg" alt="image2">
+            <img src="img3.webp" alt="image3">
+            <img src="img4.jpg" alt="image4">
+            <img src="img5.jpg" alt="image5">
+        </div>
+       
+    </div>
+    <div class="register" id="reg">
+        
+        <h1>Register*</h1>
+        <input type="email" id="email2" class="user" placeholder="Email" required><br>
+        <input type="password" id="pass2" class="user" placeholder="Create Password" required><br><br>
+        <button class="create login" id="create" onclick="singup()">Create Account</button>
+
+    </div>
+    <div  class="delete" id="delete">
+        <H2>Are You Sure To Permanent Delete Your Account</H2>
+        <div class="btn4">
+
+            <button id="logout" class="login" onclick="logout()"> Yes</button>
+            <button class="login" onclick="window.location.href='index.html'">No</button>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 130px;
+    background-color: rgb(48, 156, 156);
+}
+.form{
+    background:rgb(12, 194, 194);
+    width:400px;
+    height: 500px;
+    border-radius:20px ;
+    align-content: center;
+    justify-items: center;
+    box-shadow: 0px 15px 25px rgba(0,0,0,0.2),0px 8px 8px rgba(0,0,0,0.15) ;
+}
+h1{
+font-size: 3rem;
+font-family:Georgia;
+color: black;
+}
+.user{
+    padding: 10px;
+    font-size: 16px;
+    width: 200px;
+    outline: none;
+    height: 25px;
+    border: none;
+    border-bottom: 3px solid black ;
+    background:transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.user::placeholder{
+    color: black;
+    transition: .5s ease;
+    opacity: 1;
+}
+.user:focus{
+    border:none;
+    border-bottom: 3px solid;
+    background:transparent;
+}
+.user:focus::placeholder{
+    transform: translateY(-15px);
+    opacity: 0.8;
+    background: transparent;
+}
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    font-weight: 900;
+    font-size: 1.2rem;
+    width: 100px;
+    border: 1.5px solid white;
+    color: white;
+    /* background:blue; */
+    background:linear-gradient(50deg,red,blue);
+
+    border-radius: 10px;
+}
+.login:active{
+    opacity: 0.8;
+}
+#back{
+    display: none;
+}
+.head{
+    width: 100%;
+    height:40px;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.second{
+    border: 2px solid red;
+    /* position: absolute; */
+    height: 80%;
+    width: auto;
+    display:flex;
+    align-items: center;
+    display: none;
+    flex-wrap:wrap;    
+    background:rgb(254, 254, 254);
+}
+.second a{
+    text-decoration: none;
+}
+.second img{
+    width:200px;
+    height: 200px;
+    object-fit:cover;
+    border: 2px solid black;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.Csign{
+    display: flex;
+    position:fixed;
+    top: 130px ;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height:30px;
+}
+.sign{
+    background:transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    height: 100%;
+    width: 50%;
+    color: black;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.sign:active{
+    opacity: 5;
+    color:grey;
+    text-shadow: 2px 2px 20px white;
+}
+.register{
+    display: none;
+    background:rgb(12, 194, 194);
+    width:400px;
+    height: 500px;
+    border-radius:20px ;
+    align-content: center;
+    justify-items: center;
+    box-shadow: 0px 15px 25px rgba(0,0,0,0.2),0px 8px 8px rgba(0,0,0,0.15) ;
+}
+.delete{
+    border: 4px solid black;
+   background-color: lightcyan;
+    display:none;
+    position: absolute;
+}
+.btn4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
